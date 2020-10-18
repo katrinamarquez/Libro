@@ -1,0 +1,36 @@
+{
+  "name": "libro",
+  "version": "1.0.0",
+  "description": "Hackathon Project Libro - reading list",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alikillen/Libro.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "CRUD",
+    "API",
+    "books"
+  ],
+  "author": "ali killen and katrina marquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alikillen/Libro/issues"
+  },
+  "homepage": "https://github.com/alikillen/Libro#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.0",
+    "nodemon": "^2.0.5"
+  }
+}
