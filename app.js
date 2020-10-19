@@ -1,7 +1,7 @@
 const express = require("express")
+const expressSession = require('express-session')
 const port = 3000
 const app = express()
-
 // const cors = require("cors")
 // const bodyParser = require("body-parser")
 // const postRouter = require("./routes/posts_routes")
