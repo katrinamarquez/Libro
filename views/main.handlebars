@@ -1,0 +1,61 @@
+<h1>hi from main. am i needed?</h1>
+
+<h1>from main -  welcome to the book app</h1>
+  <p>search google books API by title or author:</p>
+  <input class="terms" id="terms" type="text">
+  <button class="search-button" onClick ="searchBook()">Search</button>
+
+  <div class="results">
+
+  </div>
+
+  <script>
+    
+    function searchBook(){
+      // https://www.googleapis.com/books/v1/volumes?q=search+terms
+      // GET https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=yourAPIKey
+
+      // SET VARIABLES TO PUT INTO THE SEARCH FUNC AS PARAMS
+      const getTerms = document.getElementById("terms").value
+      // return searchTerms
+      console.log(getTerms);
+
+      // verify that input is a string?
+
+
+      // seperate into words to input into req, eliminate whitespace
+      var searchTerms = getTerms.split(" ")
+      console.log(searchTerms)
+
+      // do we need to do this?? -->
+      // iterate over array and get and set words to variables
+      for (var i = 0; i < searchTerms.length -1; i++) {
+        searchTerms[i] 
+        // we want to return all of the terms
+      }
+      console.log(searchTerms[0])      
+
+      // put variables into search request string iteratively
+
+
+      // FETCH DATA FROM API ONCE YOU HAVE THE KEYWORDS
+      // HOW TO USE FECTH WITH NODE?
+
+      // fetch(`https://www.googleapis.com/books/v1/volumes?q=search+terms`)
+      //     .then(response => response.json())
+      //     .then((data) => {
+        
+      //       console.log(data)              
+      //   // iterating through data obj and setting variables------------------------------------
+      //     const bookTitle = data.title;
+      //     const bookAuthor = data
+                
+
+        //   now need to return those variables into HTML page--------------------------------------------
+         
+    }
+    console.log("hello")
+    // console.log(searchBook())
+    
+
+  </script>
